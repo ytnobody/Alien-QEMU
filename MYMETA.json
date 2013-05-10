@@ -1,0 +1,43 @@
+{
+   "abstract" : "Easy installation of the QEMU",
+   "author" : [
+      "ytnobody <ytnobody aaattt gmail>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4004, CPAN::Meta::Converter version 2.112621",
+   "license" : [
+      "open_source"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Alien-QEMU",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Alien::Base" : 0
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Alien::Base" : 0,
+            "File::ShareDir" : "1.00",
+            "perl" : "v5.8.1"
+         }
+      }
+   },
+   "provides" : {
+      "Alien::QEMU" : {
+         "file" : "lib/Alien/QEMU.pm",
+         "version" : "0.01"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://opensource.org/licenses/gpl-license.php"
+      ]
+   },
+   "version" : "0.01"
+}

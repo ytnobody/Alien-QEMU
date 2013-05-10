@@ -1,0 +1,9 @@
+cover_db
+META.yml
+pm_to_blib
+MANIFEST
+Build
+_build
+nytprof.out
+*.bak
+*.sw[po]
