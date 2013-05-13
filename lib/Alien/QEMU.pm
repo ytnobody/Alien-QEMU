@@ -5,30 +5,34 @@ use warnings;
 
 use parent 'Alien::Base';
 
+=encoding utf8
+
 =head1 NAME
 
 Alien::QEMU - Easy installation of the QEMU
 
+
 =head1 VERSION
 
 Version 0.01
+
 
 =cut
 
 our $VERSION = '0.01';
 our $QEMU_VERSION = '1.4.1';
 
+
 =head1 AUTHOR
 
 ytnobody, C<< <ytnobody aaatttt gmail> >>
+
 
 =head1 BUGS
 
 Please report any bugs or feature requests to C<bug-alien-qemu at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Alien-QEMU>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
-
-
 
 
 =head1 SUPPORT
@@ -57,6 +61,17 @@ L<http://cpanratings.perl.org/d/Alien-QEMU>
 =item * Search CPAN
 
 L<http://search.cpan.org/dist/Alien-QEMU/>
+
+=back
+
+
+=head1 DEPENDENCIES (SYSTEM)
+
+=over 4
+
+=item * glib (version 2.12 or later)
+
+=item * autoreconf
 
 =back
 
