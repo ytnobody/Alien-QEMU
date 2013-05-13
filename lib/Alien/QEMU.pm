@@ -16,6 +16,7 @@ Version 0.01
 =cut
 
 our $VERSION = '0.01';
+our $QEMU_VERSION = '1.4.1';
 
 =head1 AUTHOR
 
