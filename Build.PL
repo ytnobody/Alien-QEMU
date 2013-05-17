@@ -21,5 +21,11 @@ my $builder = Alien::Base::ModuleBuild->new(
         location => 'inc/',
         pattern => qr/^qemu-([\d\.]+)\.tar\.bz2$/,
     },
+    alien_build_commands => $ENV{ALIEN_QEMU_INSTALL_PATH} ? 
+        ['%pconfigure --prefix='$ENV{ALIEN_QEMU_INSTALL_PATH}. ' '. $ENV{ALIEN_QEMU_BUILD_OPTIONS}, 'make'] : 
+        ['%pconfigure --prefix=%s '. $ENV{ALIEN_QEMU_BUILD_OPTIONS}, 'make'] ,
+    alien_install_commands => [
+        'make install',
+    ],
 );
 $builder->create_build_script;

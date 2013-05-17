@@ -11,6 +11,19 @@ use parent 'Alien::Base';
 
 Alien::QEMU - Easy installation of the QEMU
 
+=head1 SYNOPSIS
+
+If you want to install QEMU into /home/myaccount/local, do as followings. 
+
+(You have to wait so long time if you do.)
+
+  ALIEN_QEMU_INSTALL_PATH=/home/myaccount/local cpanm Alien::QEMU
+
+Or, you may fo followings. (If you do, QEMU supports i386 and x86_64 only.)
+
+  ALIEN_QEMU_INSTALL_PATH=/home/myaccount/local \
+  ALIEN_QEMU_BUILD_OPTIONS='--target_list=i386-softmmu,x86_64-softmmu' \
+  cpanm Alien::QEMU
 
 =head1 VERSION
 
@@ -22,6 +35,15 @@ Version 0.01
 our $VERSION = '0.01';
 our $QEMU_VERSION = '1.4.1';
 
+=head1 ENVIRONMENT VARIABLES
+
+=head2 ALIEN_QEMU_INSTALL_PATH
+
+A specifier for QEMU installation path
+
+=head2 ALIEN_QEMU_BUILD_OPTIONS
+
+A specifier for options that apply when building QEMU
 
 =head1 AUTHOR
 
